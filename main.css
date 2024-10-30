@@ -14,6 +14,7 @@ body {
   min-height: 100vh;
   width: 100vw;
   text-align: center;
+  overflow-x: hidden;
 }
 
 h1 {
@@ -51,16 +52,18 @@ button {
 
 .poke-container {
   display: flex;
+  justify-content: center;
   width: 100%;
   flex-wrap: wrap;
-  padding: 3rem;
+  padding: 0.5rem;
 }
 
 .poke-box {
   width: 300px;
+  margin: 10px;
   background-color: #fff;
   border-radius: 15px;
-  padding: 10px;
+  padding: 5px;
 }
 
 .poke-box img {
@@ -70,5 +73,9 @@ button {
 
 .poke-box h4 {
   font-size: 1.4rem;
+  margin: 5px auto;
+}
+
+.poke-box p {
   margin: 5px auto;
 }
