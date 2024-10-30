@@ -67,6 +67,7 @@ button {
 }
 
 .poke-box img {
+  filter: drop-shadow(5px 5px 5px #222);
   margin: 10px 0;
   width: 80%;
 }
