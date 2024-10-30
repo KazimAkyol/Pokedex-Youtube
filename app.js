@@ -66,4 +66,16 @@ const createPokemonBox = (pokemon) => {
 
 initPokemon();
 
+searchInput.addEventListener("input", function (e) {
+  const pokeNames = document.querySelectorAll(".poke-name");
+  const search = searchInput.value.toLowerCase();
+  // console.log(pokeNames);
 
+  pokeNames.forEach((pokeName) => {
+    pokeName.parentElement.style.display = "block";
+
+    if (!pokeName.innerHTML.toLowerCase().includes(search)) {
+      pokeName.parentElement.style.display = "none";
+    }
+  });
+});
